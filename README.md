@@ -1,27 +1,73 @@
-# Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+# Portifolio utlizando Angular + Scully
 
-## Development server
+## Descrição:
+Este projeto foi desenvolvido utlizando o framework [Agular](https://angular.io/docs) v15 e o gerador de páginas estáticas [Scully](https://www.google.com) v2 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Neste projeto foi realizado o desenvolvimento de um exemplo de portifólio de desenvolvedor utlizando Angular 15 e para acelerar o carregamento das páginas foi utilizado o Scully que ficou responsável pela criação das páginas estáticas e geração do blog.
 
-## Code scaffolding
+Durante a implementação foram encontrados alguns problemas com a instalação das dependêndencias como o Puppeteer, mas com uma pesquisa o problema foi contornado.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+O repositório possui uma pasta chamada /docs que contém o projeto finalizado que foi utilizado para o deploy no github pages. Caso ache oportuno poderá ser apagado ou substituído com o diretório gerado pelo seu próprio projeto.
 
-## Build
+Neste projeto foi possível conhecer um pouco mais a respeito da estrutura de um *frontend* desenvolvido em Angular e o funcionamento de seus componentes internos.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Pra quem está em busca de um projeto que mostre como gerar e utilizar componentes, serviços e módulos no Angular, este é um excelente projeto.
 
-## Running unit tests
+##
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Autores
 
-## Running end-to-end tests
+- Projeto original copiado deste tutorial: (https://www.digitalocean.com/community/tutorials/how-to-build-a-jamstack-portfolio-with-angular-11-and-scully).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Deploy local
 
-## Further help
+Para rodar localmente este aplicativo, abra o terminal use os comandos abaixo:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+  git clone https://github.com/tobiassilva20/angular-portfolio-tutorial.git
+```
+
+Após o download do projeto entre na pasta baixada e instale as dependências do angular com o comando: 
+
+```bash
+  npm install
+```
+Finalizada a instalação das dependências use o comando abaixo para o servidor local do angular:
+
+```bash
+  ng serve
+```
+Acesse o endereço localhost:4200 para visualizar a aplicação angular rodando.
+
+Para gerar as páginas estáticas será necessário realizar o build da aplicação com o comando: 
+
+```bash
+  ng build
+```
+Após o build será criada a pasta /dist contendo a pasta /portfolio.
+
+Para utilizar o scully para geração das páginas estáticas rode:
+```bash
+  npx scully
+```
+Finalizado o processo de build do scully, será criada dentro da pasta /dist uma subpasta chamada /static que contem as páginas estáticas para o deploy no servidor.
+Caso queira pré-visualizar a página rode:
+
+```bash
+  npx scully serve
+```
+Acesse os endereços mostrados na saída do terminal para visualizar.
+
+Para o tutorial completo acesse(https://www.digitalocean.com/community/tutorials/how-to-build-a-jamstack-portfolio-with-angular-11-and-scully)
+## Live demo
+
+O resultado final após o deploy poderá ser visualizado [aqui](https://tobiassilva20.github.io/angular-portfolio-tutorial/)
+
+## 🔗 Links de contato
+
+Caso tenha alguma dúvida, fique à vontade para entrar em contato.
+
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://tobiasdeveloper.rf.gd/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/tobiasazevedosilva/)
+[![insta](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/tobiassilva_dev/)
