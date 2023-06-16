@@ -1,5 +1,16 @@
 [
     {
+        "name": "Developer Portfolio",
+        "stack": {
+            "name": "Angular",
+            "iconClasses": "fab fa-angular"
+        },
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "sourceUrl": "https://github.com/tobiassilva20/angular-portfolio-tutorial/",
+        "previewUrl": "https://tobiassilva20.github.io/angular-portfolio-tutorial/",
+        "featured": true
+    }
+    {
         "name": "Soduko",
         "stack": {
             "name": "Angular",
