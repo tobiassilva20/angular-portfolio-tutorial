@@ -14,7 +14,7 @@ export class ProjectsComponent {
 
   isHome$ = this.headerService.isHome();
 
-  projects$ = this.isHome$.pipe(
+  projects = this.isHome$.pipe(
     mergeMap(atHome => this.projectsService.getProjects(atHome))
   );
 
